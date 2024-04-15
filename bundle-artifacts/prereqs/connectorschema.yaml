@@ -139,6 +139,12 @@ spec:
           name: "{{formSteps.collectTickets}}"
           isOptional: true
     form:
+      - id: type
+        element: input
+        type: hiddenText
+        defaultValue: tickets
+        apiMapping: connection_config.datasource_type
+        formStep: addConnection
       - id: name
         element: input
         type: text
