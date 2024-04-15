@@ -38,4 +38,9 @@ public class Configuration {
     public String getToken() {
         return Utils.encode(token);
     }
+
+    public String getCollectionMode() {
+        return collection_mode;
+    }
+
 }
