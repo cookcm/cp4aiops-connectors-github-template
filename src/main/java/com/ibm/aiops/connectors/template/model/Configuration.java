@@ -19,7 +19,6 @@ import lombok.ToString;
  * The model that represents the ConnectorConfiguration. If you have more properties to add to your connector's
  * configuration, add it here and ensure it is defined in your BundleManifest's schema
  */
-
 @Data
 @ToString(exclude = "token")
 public class Configuration {
@@ -35,10 +34,10 @@ public class Configuration {
     protected String mappingsGithub;
     protected String description;
     protected String username;
-    protected long updateAt;
 
     public String getToken() {
         return Utils.encode(token);
     }
 
+    
 }

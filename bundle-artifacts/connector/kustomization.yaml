@@ -12,7 +12,7 @@ configurations:
   - varreference.yaml
 
 images:
-  - name: github-grpc-connector-template
+  - name: github-sample
     newName: docker.io/cookcm/sample-github-template
     newTag: latest
 
@@ -20,14 +20,14 @@ vars:
   - name: SERVICE_NAME
     objref:
       kind: Service
-      name: github-grpc-connector-template
+      name: github-sample
       apiVersion: v1
     fieldref:
       fieldpath: metadata.name
   - name: SERVICE_NAMESPACE
     objref:
       kind: Service
-      name: github-grpc-connector-template
+      name: github-sample
       apiVersion: v1
     fieldref:
       fieldpath: metadata.namespace

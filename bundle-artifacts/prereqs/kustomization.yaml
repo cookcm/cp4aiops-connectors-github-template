@@ -10,6 +10,6 @@ configurations:
   - custom-images.yaml
 
 images:
-  - name: github-grpc-connector-template
+  - name: github-sample
     newName: docker.io/cookcm/sample-github-template
     newTag: latest
