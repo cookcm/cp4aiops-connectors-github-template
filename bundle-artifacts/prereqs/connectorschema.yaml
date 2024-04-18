@@ -72,12 +72,10 @@ spec:
       issueSamplingRate:
         type: integer
       datasource_type:
-        default: tickets
-        enum:
-          - tickets
-          - 'tickets,inventory'
-          - inventory
-        type: string
+        description: List of categories
+        items:
+          type: string
+        type: array
       historical_config:
         additionalProperties: false
         properties:
@@ -141,10 +139,6 @@ spec:
       - id: type
         element: input
         type: hiddenText
-        defaultValue:
-          enum:
-            - tickets
-            - events
         apiMapping: connection_config.datasource_type
         formStep: addConnection
       - id: name
