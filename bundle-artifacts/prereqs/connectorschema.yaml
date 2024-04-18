@@ -139,6 +139,7 @@ spec:
       - id: type
         element: input
         type: hiddenText
+        defaultValue: ["tickets", "events"]
         apiMapping: connection_config.datasource_type
         formStep: addConnection
       - id: name
