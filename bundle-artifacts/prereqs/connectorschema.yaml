@@ -81,7 +81,6 @@ spec:
         required:
           - collectionMode
           - start_date
-          - datasource_type
         type: object  
       mappingsGithub:
         description: The incident creation mappings
