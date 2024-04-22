@@ -36,15 +36,6 @@ spec:
       - name: cp4waiops-cartridge.problem
         operations:
           - write
-      - name: cp4waiops-cartridge.snow-handlers
-        operations:
-          - read
-      - name: cp4waiops-cartridge.lifecycle.input.connector-responses
-        operations:
-          - write
-      - name: cp4waiops-cartridge.lifecycle.output.connector-requests
-        operations:
-          - read          
   encryptedFields:
     - /token          
   schema:
@@ -139,7 +130,7 @@ spec:
       - id: type
         element: input
         type: hiddenText
-        defaultValue: ["tickets", "events"]
+        defaultValue: ["tickets"]
         apiMapping: connection_config.datasource_type
         formStep: addConnection
       - id: name
